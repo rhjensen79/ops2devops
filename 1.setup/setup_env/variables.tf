@@ -115,7 +115,7 @@ variable "instance_ami" {
 variable "instance_type" {
   description = "Type of the instance"
   type        = string
-  default     = "t2.medium"
+  default     = "t2.small"
 }
  
 variable "key_pair" {
