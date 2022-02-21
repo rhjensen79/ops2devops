@@ -1,6 +1,8 @@
 # create-instance.tf
  
 resource "aws_instance" "instance" {
+count = var.numberofinstances
+
   ami                         = var.instance_ami
   availability_zone           = "${var.aws_region}${var.aws_region_az}"
   instance_type               = var.instance_type
@@ -18,7 +20,7 @@ resource "aws_instance" "instance" {
  
   tags = {
     "Owner"               = var.owner
-    "Name"                = "${var.owner}-instance"
+    "Name"                = "${var.owner}-${count.index}"
     "KeepInstanceRunning" = "false"
   }
 }

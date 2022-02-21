@@ -3,6 +3,13 @@
 # Variables for general information
 ######################################
  
+
+
+variable "numberofinstances" {
+  description = "Number of instances"
+  type        = number
+  #default     = "eu-central-1"
+}
 variable "aws_region" {
   description = "AWS region"
   type        = string
@@ -12,6 +19,7 @@ variable "aws_region" {
 variable "owner" {
   description = "Configuration owner"
   type        = string
+  default     = "student"
 }
  
 variable "aws_region_az" {
