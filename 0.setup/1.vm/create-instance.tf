@@ -12,26 +12,20 @@ count = var.numberofinstances
   key_name                    = var.key_pair
   user_data                   = <<EOF
 #!/bin/bash
-echo "Change password and allow password login"
 echo ubuntu:'${var.userpass}'|sudo chpasswd
 sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
-echo "Update system"
 sudo apt update
-sudo apt upgrade -y
-echo "Set hostname"
 sudo hostnamectl set-hostname "${var.owner}-${count.index}"
-echo "Install docker"
 sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 sudo apt update
-sudo apt-get -y install docker-ce docker-compose
-sudo systemctl start docker
+sudo apt-get -y install docker-ce docker-compose kubectl
 sudo systemctl enable docker
-sudo systemctl status docker
-echo "Add user to docker group"
 sudo usermod -aG docker ubuntu
-echo "Reboot system"
+sudo apt upgrade -y
 sudo reboot
 EOF
  
