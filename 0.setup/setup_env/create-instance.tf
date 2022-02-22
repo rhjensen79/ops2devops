@@ -11,34 +11,26 @@ count = var.numberofinstances
   subnet_id                   = aws_subnet.subnet.id
   key_name                    = var.key_pair
   user_data                   = <<EOF
-#!/bin/bash -xe
+#!/bin/bash
+echo "Change password and allow password login"
+echo ubuntu:'${var.userpass}'|sudo chpasswd
+sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 echo "Update system"
 sudo apt update
 sudo apt upgrade -y
-
 echo "Set hostname"
 sudo hostnamectl set-hostname "${var.owner}-${count.index}"
-
 echo "Install docker"
 sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common
-
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
-
 sudo apt update
-
 sudo apt-get -y install docker-ce docker-compose
-
 sudo systemctl start docker
-
 sudo systemctl enable docker
-
 sudo systemctl status docker
-
 echo "Add user to docker group"
 sudo usermod -aG docker ubuntu
-
 echo "Reboot system"
 sudo reboot
 EOF

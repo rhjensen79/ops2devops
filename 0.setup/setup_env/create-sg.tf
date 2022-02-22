@@ -1,8 +1,8 @@
 # create-sg.tf
  
-data "http" "myip" {
-  url = "http://ipv4.icanhazip.com"
-}
+#data "http" "myip" {
+#  url = "http://ipv4.icanhazip.com"
+#}
  
 resource "aws_security_group" "sg" {
   name        = "${var.owner}-sg"
@@ -14,7 +14,8 @@ resource "aws_security_group" "sg" {
     protocol         = var.sg_ingress_proto
     from_port        = var.sg_ingress_ssh
     to_port          = var.sg_ingress_ssh
-    cidr_blocks      = ["${chomp(data.http.myip.body)}/32"]
+    #cidr_blocks      = ["${chomp(data.http.myip.body)}/32"]
+    cidr_blocks      = ["0.0.0.0/0"]
     ipv6_cidr_blocks = []
     prefix_list_ids  = []
     security_groups  = []

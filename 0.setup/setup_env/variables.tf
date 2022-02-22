@@ -3,8 +3,11 @@
 # Variables for general information
 ######################################
  
-
-
+variable "userpass" {
+  description = "Ubuntu user Password"
+  type        = string
+  default     = "VMware1!"
+}
 variable "numberofinstances" {
   description = "Number of instances"
   type        = number
