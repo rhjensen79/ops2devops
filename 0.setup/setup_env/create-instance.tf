@@ -10,6 +10,13 @@ count = var.numberofinstances
   vpc_security_group_ids      = [aws_security_group.sg.id]
   subnet_id                   = aws_subnet.subnet.id
   key_name                    = var.key_pair
+  user_data                   = <<EOF
+#!/bin/bash -xe
+sudo apt update
+sudo apt upgrade -y
+sudo hostnamectl set-hostname "${var.owner}-${count.index}"
+sudo reboot
+EOF
  
   root_block_device {
     delete_on_termination = true
