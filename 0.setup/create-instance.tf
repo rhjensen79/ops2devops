@@ -23,6 +23,7 @@ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt
 sudo apt update && sudo apt-get -y install docker-ce docker-compose kubectl
 sudo systemctl enable docker
 sudo usermod -aG docker ubuntu
+sudo mkdir /home/ubuntu/.kube
 sudo apt upgrade -y
 sudo reboot
 EOF
