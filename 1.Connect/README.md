@@ -13,7 +13,7 @@
 
 - Type
 
-    `ssh -i 0.setup/ssh/ops2devops.pem ubuntu@Ipadress `
+    `ssh ubuntu@Ipadress`
 
 - Open Command palette again, and type "Remote SSH: Connect to Host"
 
