@@ -8,8 +8,10 @@
 #  value = aws_instance.instance[*].tags
 #}
 
-output "public_ip" {
+output "student_ip" {
   value = aws_instance.instance[*].public_ip
 }
 
-
+output "k8s_ip" {
+  value = aws_instance.k8s.public_ip
+}

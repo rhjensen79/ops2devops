@@ -9,7 +9,7 @@ variable "userpass" {
   default     = "VMware1!"
 }
 variable "numberofinstances" {
-  description = "Number of instances"
+  description = "Number of Students"
   type        = number
   #default     = "eu-central-1"
 }
@@ -127,6 +127,12 @@ variable "instance_type" {
   description = "Type of the instance"
   type        = string
   default     = "t2.small"
+}
+
+variable "k8s_instance_type" {
+  description = "Type of the instance"
+  type        = string
+  default     = "t2.medium"
 }
  
 variable "key_pair" {
