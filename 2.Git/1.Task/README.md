@@ -1,7 +1,7 @@
 # Getting started with Git (Local)
 
 
-## 1. Configure git
+## Configure git
 ```
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
@@ -20,7 +20,6 @@ git init
 
 # Check a new .git folder has been created with content
 ls .git
-
 ```
 
 ## Create files/changes (CLI)
@@ -45,7 +44,6 @@ git commit -m "My second change"
 
 # See the changes you have done
 git log --graph
-
 ```
 
 
