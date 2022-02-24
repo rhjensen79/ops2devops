@@ -28,7 +28,7 @@
 
 - cd /home/ubuntu
 
-- type `git clone CopyedURL`
+- Run `git clone CopyedURL`
 - Open the new folder in VSCode - Top Menu -> File ->Open folder
 
 - You now have a local copy, of the forked Public git repository for this workshop.

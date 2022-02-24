@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  webserver:
+    container_name: nginx
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - ./html:/usr/share/nginx/html

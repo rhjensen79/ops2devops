@@ -8,7 +8,7 @@
 
 ## Dockerfile
 
-- Open the `Dockerfile`in VSCode
+- Open the `Dockerfile` in VSCode
 - Go thru the different options
     - FROM
     - WORKDIR
