@@ -3,22 +3,19 @@
 - Start VScode
 - Open "Command Palette" 
 
-    ctrl+Shift+P on Windows
+    `ctrl+Shift+P on Windows`
 
-    cmd+shift+P on Mac
+    `cmd+shift+P on Mac`
 
-- Type "Remote SSH: Connect to Host"
+- Type `Remote SSH: Connect to Host`
 
-- Select "Add new SSH Host"
+- Select `Add new SSH Host`
 
-- Type
+- Type `ssh ubuntu@Ipadress`
 
-    `ssh ubuntu@Ipadress`
-
-- Open Command palette again, and type "Remote SSH: Connect to Host"
+- Open Command palette again, and type `Remote SSH: Connect to Host`
 
 - Select the host you just added
 
-    Accept certificate warning, you you get one. 
+    Accept certificate warning, if you get one. 
 
-### You are now done with this module

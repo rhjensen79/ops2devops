@@ -2,64 +2,76 @@
 
 
 ## Configure git
-```
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
-```
+- To configure git with your user, type the following commands
+
+    `git config --global user.name "John Doe"`
+    
+    `git config --global user.email johndoe@example.com`
+
 
 ## Create first Git Repository
-```
-# Create Folder
-mkdir myfirstrepo
 
-# Open folder
-cd myfirstrepo
+- Create Folder
 
-# Initialize git
-git init
+    `mkdir myfirstrepo`
 
-# Check a new .git folder has been created with content
-ls .git
-```
+- Open folder
+
+    `cd myfirstrepo`
+
+- Initialize git
+
+    `git init`
+
+- Check a new .git folder has been created with content
+
+    `ls .git`
+
 
 ## Create files/changes (CLI)
-```
-# Create a file with text
-echo "initial content" > file1.txt
 
-# Stage changes
-git add .
+- Create a file with text
 
-# commit changes
-git commit -m "My first change"
+    `echo "initial content" > file1.txt`
 
-# make a new change to the file
-echo "new content" > file1.txt
+- Stage changes
 
-# Stage the new changes
-git add .
+    `git add .`
 
-# commit new changes
-git commit -m "My second change"
+- commit changes
 
-# See the changes you have done
-git log --graph
-```
+    `git commit -m "My first change"`
+
+- make a new change to the file
+
+    `echo "new content" > file1.txt`
+
+- Stage the new changes
+
+    `git add .`
+
+- commit new changes
+
+    `git commit -m "My second change"`
+
+- See the changes you have done
+
+    `git log --graph`
+
 
 
 ## Create files/changes (GUI)
-```
-# Open the folder in vscode
 
-# Open file1.txt and add or change the content
-# Save the file
+- Open the folder in vscode
 
-# See the number on the icon to the left.
+- Open file1.txt and add or change the content
+- Save the file
 
-# Select the Soruce control icon
+- See the number on the icon to the left.
 
-# Select the file
-# See the changes to the file
+- Select the Soruce control icon
 
-# Type commit message in the top and apply it
-```
+- Select the file
+- See the changes you made to the file, compared with the current version
+
+- Type commit message in the top and apply it

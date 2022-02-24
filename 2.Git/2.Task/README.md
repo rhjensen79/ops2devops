@@ -19,21 +19,16 @@
 
 - Select https
 
-# copy the url
+- copy the url
 
 ## Clone Repository
-```
-# Open VSCode
-# Make sure you are not in the existing folder, vi created earlier, but insted in in the root home folder /home/ubuntu
 
-cd /home/ubuntu
+- Open VSCode
+- Make sure you are not in the existing folder, vi created earlier, but insted in in the root home folder /home/ubuntu
 
-# type git clone CopyedURL
-# Open the new folder in VSCode - Top Menu -> File ->Open folder
+- cd /home/ubuntu
 
-# You now have a local copy, of the forked Public git repository for this workshop.
-```
+- type `git clone CopyedURL`
+- Open the new folder in VSCode - Top Menu -> File ->Open folder
 
-```
-git clone https://github.com/TanzuDK/ops2devops
-```
+- You now have a local copy, of the forked Public git repository for this workshop.
