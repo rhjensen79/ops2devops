@@ -1,4 +1,4 @@
-## Setup Git repo on Ubuntu VM
+# Getting started with Git (Remote)
 
 ```
 git clone https://github.com/TanzuDK/ops2devops.git
