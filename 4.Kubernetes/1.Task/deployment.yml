@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: studentx-deployment
+  namespace: studentx
+spec:
+  selector:
+    matchLabels:
+      app: studentx
+  template:
+    metadata:
+      labels:
+        app: studentx
+    spec:
+      containers:
+      - name: studentx
+        image: ghcr.io/tanzudk/ops2devops:master
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+
