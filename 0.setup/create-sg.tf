@@ -46,6 +46,18 @@ resource "aws_security_group" "sg" {
  
   },
   {
+    description      = "K8S API External"
+    protocol         = "tcp"
+    from_port        = 16443
+    to_port          = 16443
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = []
+    prefix_list_ids  = []
+    security_groups  = []
+    self             = false
+ 
+  },
+  {
     description      = "Internal"
     protocol         = "-1"
     from_port        = 0

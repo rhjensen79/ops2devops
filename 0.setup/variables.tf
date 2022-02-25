@@ -11,7 +11,6 @@ variable "userpass" {
 variable "numberofinstances" {
   description = "Number of Students"
   type        = number
-  #default     = "eu-central-1"
 }
 variable "aws_region" {
   description = "AWS region"
