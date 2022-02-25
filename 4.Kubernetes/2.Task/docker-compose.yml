@@ -1,0 +1,16 @@
+---
+version: "3"
+services:
+    webtop:
+        image: ghcr.io/linuxserver/webtop:ubuntu-mate
+        container_name: webtop
+        privileged: true #optional
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Europe/Copenhagen
+            - password=VMWare1!
+            - KEYBOARD=da-dk-qwerty
+        ports:
+            - 80:3000
+        restart: always
