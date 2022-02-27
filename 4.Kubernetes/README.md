@@ -1,10 +1,9 @@
 # Kubernetes
 
-## Setup Kubeconfig on Student VM
+## 1. Task
 
-- Run `scp ubuntu@K8S_Private_Ipadress:/home/ubuntu/.kube/config /home/ubuntu/.kube/config`
-- Accept certificate
-- Type password `VMware1!`
-- Check the config file `cat .kube/config`
+Learn how to Create a namespace, and create a deployment file, to deploy a Kubernetes application.
 
-## 
+## 2. Task
+
+Deploy an application with a service.
