@@ -5,7 +5,7 @@ Compose is a tool for defining and running multi-container Docker applications. 
 ## docker-compose.yml
 
 - Open `docker-compose.yml` and examine the content of the file. 
-- run `docker-compose up`to build and run the container.
+- run `docker-compose up` to build and run the container.
 - open a browser to `http://studentip:80` and see the website.
 - Press `ctrl+c`to cancel the running container.
 - Make changes to the `html/index.html` file.
