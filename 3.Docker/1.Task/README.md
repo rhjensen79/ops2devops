@@ -44,3 +44,4 @@
 ## See the different images
 
 - run `docker ps -a` and see that you have 2 versions of the `web` container.
+- Note the names is auto generated, to make sure there is no comflick between them.
