@@ -12,3 +12,4 @@
 - On the top, there is a message box. Type a commit message into this like "Added server information" and press `ctrl + enter`
 - The changes is now committed. Note the commit is still local, and not pushed to the remote repository on Github. 
 - To push it remote, click the 3 `...` in the top, and select `Push` or find the 2 round arrow symbol, in the bottom, and click this, to sync both ways. 
+- Your changes are now committed, and pushed. 
