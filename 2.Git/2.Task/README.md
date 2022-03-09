@@ -30,5 +30,12 @@
 
 - Run `git clone CopyedURL`
 - Open the new folder in VSCode - Top Menu -> File ->Open folder
+- If presented by a security warning, accept that you trust the folder and all subfolders.
 
-- You now have a local copy, of the forked Public git repository for this workshop.
+- You now have a local copy, of the forked Public git repository for this workshop, and is running VS code, from that repository, on the remote server.
+
+## Save changes
+
+- To save any changes you do in this repository, you need to commit and push them back to the repo, or else, they will be lost, when this VM get's deleted, after the workshop.
+
+- Note that saving sensetive credentials, in not recommended in a public (or private) git repository, since they can be read by anybody. 
