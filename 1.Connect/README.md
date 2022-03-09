@@ -1,5 +1,8 @@
 # Connect to enviroment
 
+
+## Open in VSCode
+
 - Start VScode
 - Open "Command Palette" 
 
