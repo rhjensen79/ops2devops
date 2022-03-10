@@ -13,3 +13,12 @@
 - The changes is now committed. Note the commit is still local, and not pushed to the remote repository on Github. 
 - To push it remote, click the 3 `...` in the top, and select `Push` or find the 2 round arrow symbol, in the bottom, and click this, to sync both ways. 
 - Your changes are now committed, and pushed. 
+
+
+# Install Git Graph in VSCode
+
+- Open settings -> Extentions in VSCode
+- Search for `Git Graph` and install it.
+- After install go to the `Soruce Control` icon, and find the small Git Graph icon, to the right of `Source Control`
+- This opens up a graphical view, that shows your different commits/Branches etc. 
+- You can click each commit, and see what changes you did.
