@@ -10,6 +10,7 @@ count = var.numberofinstances
   vpc_security_group_ids      = [aws_security_group.sg.id]
   subnet_id                   = aws_subnet.subnet.id
   key_name                    = var.key_pair
+  private_ip                  = "${lookup(var.ips,count.index)}"
   user_data                   = <<EOF
 #!/bin/bash
 echo ubuntu:'${var.userpass}'|sudo chpasswd
@@ -51,6 +52,7 @@ resource "aws_instance" "k8s" {
   vpc_security_group_ids      = [aws_security_group.sg.id]
   subnet_id                   = aws_subnet.subnet.id
   key_name                    = var.key_pair
+  private_ip                  = "10.0.1.9"
   user_data                   = <<EOF
 #!/bin/bash
 echo ubuntu:'${var.userpass}'|sudo chpasswd
@@ -63,6 +65,7 @@ sudo snap install microk8s --classic
 sudo usermod -aG microk8s ubuntu
 sudo mkdir /home/ubuntu/.kube
 sudo microk8s config > /home/ubuntu/.kube/config
+sudo microk8s enable metallb:10.0.1.100-10.0.1.199
 sudo ufw disable
 sudo apt upgrade -y
 sudo reboot
