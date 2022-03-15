@@ -9,7 +9,7 @@ services:
             - PUID=1000
             - PGID=1000
             - TZ=Europe/Copenhagen
-            - password=VMWare1!
+            - password=VMware1!
             - KEYBOARD=da-dk-qwerty
         ports:
             - 80:3000
