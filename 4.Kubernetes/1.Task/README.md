@@ -2,7 +2,7 @@
 
 ## Setup Kubeconfig on Student VM
 
-- Run `scp ubuntu@10.0.1.2:/home/ubuntu/.kube/config /home/ubuntu/.kube/config`
+- Run `scp ubuntu@10.0.1.9:/home/ubuntu/.kube/config /home/ubuntu/.kube/config`
 - Accept certificate
 - Type password `VMware1!`
 - Check the config file `cat /home/ubuntu/.kube/config` exist, and talk about it in class.
