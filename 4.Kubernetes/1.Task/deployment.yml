@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: studentx
-        image: ghcr.io/tanzudk/ops2devops:master
+        image: ghcr.io/tanzudk/ops2devops/4-k8s-1:master
         resources:
           limits:
             memory: "128Mi"
