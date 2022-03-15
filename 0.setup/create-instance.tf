@@ -63,6 +63,7 @@ sudo snap install microk8s --classic
 sudo usermod -aG microk8s ubuntu
 sudo mkdir /home/ubuntu/.kube
 sudo microk8s config > /home/ubuntu/.kube/config
+sudo ufw disable
 sudo apt upgrade -y
 sudo reboot
 EOF
