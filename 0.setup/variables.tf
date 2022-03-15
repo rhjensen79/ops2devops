@@ -9,7 +9,7 @@ variable "userpass" {
   default     = "VMware1!"
 }
 variable "numberofinstances" {
-  description = "Number of Students"
+  description = "Number of Students (Max 25)"
   type        = number
 }
 variable "aws_region" {
@@ -120,6 +120,16 @@ variable "ips" {
         "13" = "10.0.1.23"
         "14" = "10.0.1.24"
         "15" = "10.0.1.25"
+        "16" = "10.0.1.26"
+        "17" = "10.0.1.27"
+        "18" = "10.0.1.28"
+        "19" = "10.0.1.29"
+        "20" = "10.0.1.30"
+        "21" = "10.0.1.31"
+        "22" = "10.0.1.32"
+        "23" = "10.0.1.33"
+        "24" = "10.0.1.34"
+        "25" = "10.0.1.35"
     }
 }
  
