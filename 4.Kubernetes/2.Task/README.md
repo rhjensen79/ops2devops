@@ -9,18 +9,11 @@
 
 ## Add Services to Deployment
 - Copy the deployment.yml file you created in last task by running `cp ../1.Task/deployment.yml deployment.yml` from the `2.Task` directory
-- Add the following to the botton of your `deployment.yaml` file. 
-```
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: studentx-deployment
-spec:
-  selector:
-    app: studentx
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 90xx
-```
+- Edit the `service.yml` file, so the `Selector: app name`matches the name in the deployment.
+- Make sure to also change the nodeport, to match your student number, in the last 2 digits. 
+- In this demo enviroment, we are using Nodeport, to expose the deployments. Talk about the different ways you can expose a service :
+  - NodePort
+  - LoadBalancer
+  - Ingress
+
+
