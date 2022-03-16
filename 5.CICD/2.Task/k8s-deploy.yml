@@ -28,7 +28,4 @@ jobs:
           curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
           echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
           sudo apt update && sudo apt-get -y install kubectl
-          mkdir $home/.kube
-          sudo chmod 777 $home/.kube
-          echo ${{ env.KUBECONFIG }} > $home/.kube/config
-          kubectl get nodes
+          kubectl --kubeconfig ${{ env.KUBECONFIG }} get all
