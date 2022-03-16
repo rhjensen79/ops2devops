@@ -1,9 +1,13 @@
 # CI/CD
 
-## Setup Kubectl for remote access
+## Setup Automatic Build using GitHub Actions
 
-## Create Kubeconfig file, for remote access for CI/CD Workflow
+- We will now setup automatic building of docker images, and pushing it to your private repo, using GitHub Actions.
 
-- Run `sed "s/certificate-authority-data:.*/insecure-skip-tls-verify: true/g" /home/ubuntu/.kube/config > kubeconfig.yml` to allow connectivity external, without verifying the certificate.
+- Open `docker-publish.yml`
+- Locate `ENV` and change the beginning of the value int he `IMAGE_NAME` key to match your github repository.
+- Talk about the rest of the file in class.
 
-- 
+- Copy the file, to the root of your github repo, under `.github/workflows` and commit and push your repo.
+
+- Open github.com and find your repository, and select Actions
