@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: student1-deployment
+  namespace: student1
+spec:
+  selector:
+    matchLabels:
+      app: student1
+  template:
+    metadata:
+      labels:
+        app: student1
+    spec:
+      containers:
+      - name: student1
+        image: ghcr.io/tanzudk/ops2devops/4-k8s-1:master
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: student1
+spec:
+  type: NodePort
+  selector:
+    app: student1
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30010
+
