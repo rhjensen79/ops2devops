@@ -16,7 +16,7 @@ count = var.numberofinstances
 echo ubuntu:'${var.userpass}'|sudo chpasswd
 sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 sudo hostnamectl set-hostname "${var.owner}-${count.index}"
-sudo apt update && sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common
+sudo apt update && sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common net-tools
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
@@ -60,7 +60,7 @@ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/
 sudo hostnamectl set-hostname "k8s"
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-sudo apt update && sudo apt-get -y install kubectl
+sudo apt update && sudo apt-get -y install kubectl net-tools
 sudo snap install microk8s --classic
 sudo usermod -aG microk8s ubuntu
 sudo mkdir /home/ubuntu/.kube
