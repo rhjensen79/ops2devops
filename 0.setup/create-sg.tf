@@ -34,6 +34,18 @@ resource "aws_security_group" "sg" {
  
   },
   {
+    description      = "NodePort"
+    protocol         = "tcp"
+    from_port        = 30010
+    to_port          = 30035
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = []
+    prefix_list_ids  = []
+    security_groups  = []
+    self             = false
+ 
+  },
+  {
     description      = "HTTPS External"
     protocol         = "tcp"
     from_port        = 443
