@@ -34,6 +34,12 @@
 
 - You now have a local copy, of the forked Public git repository for this workshop, and is running VS code, from that repository, on the remote server.
 
+## Enable Actions
+
+- To prepare for a later step, open the Action tab, in your new forked repository page on Github.
+- Click The green button, to confirm you accept and want to enable actions.
+![actions](../images/actions.png)
+- Click 4-k8s-1 and select run workflow, on the right.
 ## Save changes
 
 - To save any changes you do in this repository, you need to commit and push them back to the repo, or else, they will be lost, when this VM get's deleted, after the workshop.
