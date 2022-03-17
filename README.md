@@ -1,4 +1,4 @@
-![logo](https://imageio.forbes.com/specials-images/imageserve/60f1e792c7e89f933811814c/DevOps-concept/960x0.jpg?fit=bounds&format=jpg&width=960)
+![logo](.repo/images/frontpage_logo.jpg)
 # Ops2DevOps workshop
 
 Repository with material for ops 2 DevOps workshop.
