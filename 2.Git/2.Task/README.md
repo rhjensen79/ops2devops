@@ -33,7 +33,6 @@
 - If presented by a security warning, accept that you trust the folder and all subfolders.
 
 - You now have a local copy, of the forked Public git repository for this workshop, and you are running VS code, from that repository, on the remote server.
-
 ## Enable Actions
 
 - To prepare for a later step, open the Action tab, in your new forked repository page on Github.
