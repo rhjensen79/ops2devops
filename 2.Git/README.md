@@ -1,4 +1,4 @@
-# Git
+# 1. Git
 
 ## 1. Task
 
@@ -14,4 +14,4 @@ Make changes to your own local repository, and push them to Github.
 
 ## 4. Extra
 
-Extra tasks, that can be compoleted by yourself, if there is time.
+Extra tasks if time permits it.

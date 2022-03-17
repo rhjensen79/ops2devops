@@ -1,4 +1,4 @@
-# Docker
+# 2. Docker
 
 ## 1. Task
 
@@ -11,3 +11,7 @@ Learn how to use Docker-Compose to run a container.
 ## 3. Task
 
 Use Docker-Compose to build a multi container application, with dedicated volumes etc. and run it. 
+
+## 4. Extra
+
+Extra tasks if time permits it.
