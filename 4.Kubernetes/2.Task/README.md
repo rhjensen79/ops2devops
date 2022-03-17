@@ -1,4 +1,4 @@
-# Kubernetes Services
+# 2. Task - Deployment with service
 
 ## Add Services to Deployment
 

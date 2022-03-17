@@ -1,4 +1,4 @@
-# Connect to enviroment
+# 1. Connect
 
 
 ## Open in VSCode

@@ -1,4 +1,4 @@
-# Getting started with Git (Local)
+# 1. Task - Getting started with Git (Local)
 
 
 ## Configure git

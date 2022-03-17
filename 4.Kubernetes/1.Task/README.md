@@ -1,4 +1,4 @@
-# Kubernetes
+# 1. Task - Simple Deployment
 
 ## Setup Kubeconfig on Student VM
 

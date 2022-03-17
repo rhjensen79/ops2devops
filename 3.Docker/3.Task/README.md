@@ -1,4 +1,4 @@
-# Advanced Docker-Compose
+# 3. Task - Advanced Docker-Compose
 
 ## Multi Container Wordpress app.
 

@@ -1,4 +1,4 @@
-# Getting started with Git 
+# 3. Task - Getting started with Git 
 
 ## Saving/committing data
 
@@ -25,6 +25,6 @@
 
 - Open settings -> Extentions in VSCode
 - Search for `Git Graph` and install it.
-- After install go to the `Source Control` icon, and find the small Git Graph icon, to the right of `Source Control`
+- After install go to the `Soruce Control` icon, and find the small Git Graph icon, to the right of `Source Control`
 - This opens up a graphical view, that shows your different commits/Branches etc. 
 - You can click each commit, and see what changes you did.

@@ -1,4 +1,6 @@
-# Misc
+# 6. Misc
+
+This last part, is to sum up all we have gone thru, and to provide links etc, for things to look at yourself.
 
 ## Usefull links
 

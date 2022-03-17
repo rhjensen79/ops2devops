@@ -1,4 +1,4 @@
-# Setup
+# 0. Setup
 
 Terraform job, that deploys x student VM's in EC2, and 1 ECH VM, installed with [Microk8s](https://microk8s.io) for Kubernetes target.
 
