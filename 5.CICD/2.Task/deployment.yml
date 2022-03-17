@@ -15,6 +15,7 @@ spec:
       containers:
       - name: studentx
         image: ghcr.io/tanzudk/ops2devops/5-k8s-1:master
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "128Mi"

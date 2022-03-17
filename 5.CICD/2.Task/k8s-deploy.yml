@@ -31,4 +31,5 @@ jobs:
           kubeconfig: ${{ secrets.KUBE_CONFIG }} # Use secret (https://developer.github.com/actions/managing-workflows/storing-secrets/)
       - name: Deploy to Cluster
         run: |
+          kubectl delete -f 5.CICD/2.Task/deployment.yml
           kubectl apply -f 5.CICD/2.Task/deployment.yml
