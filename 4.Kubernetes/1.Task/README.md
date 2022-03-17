@@ -74,3 +74,9 @@ k8s    Ready    <none>   6d1h   v1.23.4-2+98fc2022f3ad3e
 - Run `kubectl apply -f deployment.yml``
 - See the deployment now happens in the namespace you just specified, by running `kubectl get all -n studentx`, without you typing it in each command.
 - Delete the deployment again by running `kubectl delete -f deployment.yml``
+
+## See all deployments / pods
+
+- If you want to see all deployments across namespaces, then run `kubectl get deployments -A`
+- You can do the same with pods `kubectl get pods -A`
+- Or just type `kubectl get all -A` if you want to see (almost) all types of things running.
