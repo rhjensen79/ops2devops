@@ -10,17 +10,20 @@ Compose is a tool for defining and running multi-container Docker applications. 
     - Container name
     - Build
     - Ports
-    - Volumes
+    - Volumes (data is external from the container)
 
 - run `docker-compose up` to build and run the container.
-- open a browser to `http://studentip:80` and see the website, is back to scratch, from before you did your edit in the earlier task.
+- Note we build the container in this example, but we could just as well, pull one from a registry.
+- open a browser to `http://studentip:80` and see the website, is updated with a image, and text more fitting for this task.
 - Press `ctrl+c`to cancel the running container.
 
+## Run as deamon
 
-- Make changes to the `html/index.html` file. Change it to something, other than wat you did before, to be able to see it's new changes.
 - run `docker-compose up -d` to run the container as a service
 - run `docker ps` and see the container running.
-- Note the name if the container, is nginx
-- open a browser to `http://studentip:80` and see the new changes to the website.
+- Note the name if the container, is nginx, and not reandom generated.
+- open a browser to `http://studentip:80` and see it's still runnning as before.
+- Open `index.html` and change `Student xxx` to your student number. 
+- Save the file and refresh the website, and see your changes.
 - Note the changes is not build into the container, but instead directly presented from the html directory.
 - run `docker-compose down` to stop the container. 
