@@ -1,9 +1,9 @@
-# Ops2DevOps workshop repository
+# Ops2DevOps workshop
 
-Repository for workshop material for ops 2 DevOps training.
+Repository for material for ops 2 DevOps workshop.
 A training ment to help the average Ops person, learn more about Git, Containers, Kubernetes and CI/CD to be able to better understand, the demand and requirements many business face today.
 
-## Pre requirements for the Student
+## Pre requirements for the Student, to be completed prior to class.
 
 - [Github.com](www.github.com) account
 - [VSCode](https://code.visualstudio.com/Download) Installed
