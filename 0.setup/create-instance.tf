@@ -27,6 +27,9 @@ sudo usermod -aG docker ubuntu
 sudo mkdir /home/ubuntu/.kube
 sudo chmod 777 /home/ubuntu/.kube
 sudo apt upgrade -y
+sudo docker pull registry.tanzu.dk/dockerhub/library/nginx:latest
+sudo docker pull registry.tanzu.dk/dockerhub/library/mysql:5.7
+sudo docker pull registry.tanzu.dk/dockerhub/library/wordpress:latest
 sudo reboot
 EOF
  
