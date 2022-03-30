@@ -35,3 +35,4 @@ terraform.rc
 **/terraform.tfstate.backup
 **/terraform.tfstate
 0.setup/1.vm/.terraform.lock.hcl
+.DS_Store
