@@ -1,5 +1,10 @@
 # 1. Connect
 
+## Get ipadresses
+
+- All Student ipadresses are shared from a Notion page, found [here](https://robert-jensen.notion.site/Ops2DevOps-c2706b737bb74fe9943367bc2156e7c4).
+- Dont copy them, until the teacher has updated with the ipadessed, relavant for the current class. 
+ 
 
 ## Open in VSCode
 

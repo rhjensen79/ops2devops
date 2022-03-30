@@ -9,7 +9,10 @@
 #}
 
 output "student_ip" {
-  value = aws_instance.instance[*].public_ip
+  value = [
+    aws_instance.instance[*].tags.Name,
+    aws_instance.instance[*].public_ip
+  ]
 }
 
 output "k8s_externalip" {
