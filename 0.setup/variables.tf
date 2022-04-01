@@ -155,13 +155,13 @@ variable "instance_ami" {
 variable "instance_type" {
   description = "Type of the instance"
   type        = string
-  default     = "t2.small"
+  default     = "t2.medium"
 }
 
 variable "k8s_instance_type" {
   description = "Type of the instance"
   type        = string
-  default     = "t2.medium"
+  default     = "t2.large"
 }
  
 variable "key_pair" {
