@@ -16,7 +16,7 @@ count = var.numberofinstances
 echo ubuntu:'${var.userpass}'|sudo chpasswd
 sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 sudo hostnamectl set-hostname "${var.owner}-${count.index}"
-sudo apt update && sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common net-tools
+sudo apt update && sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common net-tools wget
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
@@ -26,12 +26,14 @@ sudo systemctl enable docker
 sudo usermod -aG docker ubuntu
 sudo mkdir /home/ubuntu/.kube
 sudo chmod 777 /home/ubuntu/.kube
-curl -fsSL https://code-server.dev/install.sh | sh
-sudo systemctl enable --now code-server@ubuntu
-echo "bind-addr: 0.0.0.0:8080" > ~/.config/code-server/config.yaml
-echo "auth: password" >> ~/.config/code-server/config.yaml
-echo "password: VMware1!" >> ~/.config/code-server/config.yaml
-echo "cert: false" >> ~/.config/code-server/config.yaml
+#wget https://code-server.dev/install.sh
+#chmod +x install.sh
+#./install.sh
+#sudo systemctl enable --now code-server@ubuntu
+#echo "bind-addr: 0.0.0.0:8080" > ~/.config/code-server/config.yaml
+#echo "auth: password" >> ~/.config/code-server/config.yaml
+#echo "password: VMware1!" >> ~/.config/code-server/config.yaml
+#echo "cert: false" >> ~/.config/code-server/config.yaml
 sudo apt upgrade -y
 sudo docker pull registry.tanzu.dk/dockerhub/library/nginx:latest
 sudo docker pull registry.tanzu.dk/dockerhub/library/mysql:5.7
