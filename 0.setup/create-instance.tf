@@ -26,6 +26,12 @@ sudo systemctl enable docker
 sudo usermod -aG docker ubuntu
 sudo mkdir /home/ubuntu/.kube
 sudo chmod 777 /home/ubuntu/.kube
+curl -fsSL https://code-server.dev/install.sh | sh
+sudo systemctl enable --now code-server@ubuntu
+echo "bind-addr: 0.0.0.0:8080" > ~/.config/code-server/config.yaml
+echo "auth: password" >> ~/.config/code-server/config.yaml
+echo "password: VMware1!" >> ~/.config/code-server/config.yaml
+echo "cert: false" >> ~/.config/code-server/config.yaml
 sudo apt upgrade -y
 sudo docker pull registry.tanzu.dk/dockerhub/library/nginx:latest
 sudo docker pull registry.tanzu.dk/dockerhub/library/mysql:5.7

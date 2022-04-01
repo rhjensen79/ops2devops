@@ -33,6 +33,18 @@ resource "aws_security_group" "sg" {
     self             = false
  
   },
+  {
+    description      = "VSCode External"
+    protocol         = "tcp"
+    from_port        = 8080
+    to_port          = 8080
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = []
+    prefix_list_ids  = []
+    security_groups  = []
+    self             = false
+ 
+  },
     {
     description      = "K8S External"
     protocol         = "tcp"
