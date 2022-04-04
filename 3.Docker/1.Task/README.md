@@ -34,12 +34,15 @@
 - Watch the build finish
 - When it's done, you should read `Successfully tagged web:v1`
 - This means you build a local container, named web:1
+- Run `docker image ls` to see the images local on the machine
+- Note you will see both the Web container, and the nginx container, that the web container was build on. As part of this workshop, where will also be a couple of other images, that all start with registry.tanzu.dk, but that is for a later step.
 
 ## Run Container
 
 - Run `docker run -p 80:80 web:v1`
 - open a browser to the public ip of your student VM, from your local machine `http://studentip:80`
 - See the website that is running :-) 
+- Note that when you connect to the website, the logs from the container, is updated in the console. 
 - Stop the container pressing `ctrl + c`
 
 ## Make Changes
@@ -48,9 +51,10 @@
 - Build a new version of the container, by running `docker build -t web:v2 .` 
 - Run the new version `docker run -p 80:80 web:v2`
 - open a browser to `http://studentip:80` and see that the content has changed.
-- Stop the container again
+- Stop the container again by pressing `ctrl + c`
 
 ## See the different images
 
 - run `docker ps -a` and see that you have 2 versions of the `web` container.
 - Note the names is auto generated, to make sure there is no conflick between them.
+- Also note, that this is the actual containers, that are build on the images. You can have multiple containers, build on the same image.

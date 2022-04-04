@@ -27,3 +27,4 @@
 
     Accept certificate warning, if you get one. 
 
+Your VSCode is now connected to the remote machie, and everything you do, will be done remote, and not local.

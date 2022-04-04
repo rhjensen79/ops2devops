@@ -26,4 +26,13 @@ Compose is a tool for defining and running multi-container Docker applications. 
 - Open `index.html` and change `Student xxx` to your student number. 
 - Save the file and refresh the website, and see your changes.
 - Note the changes is not build into the container, but instead directly presented from the html directory.
+
+## Trubleshoot running container
+- Run `docker exec -it nginx /bin/bash` to get a terminal into the running container
+- See the promt changes to `root@id`
+- Run `/usr/share/nginx/html` to list the html directory, from inside the container.
+- Run `exit` to exit out of the container.
+- Run `docker ps` to see the conainer is still running.
+
+## Cleanup
 - run `docker-compose down` to stop the container. 

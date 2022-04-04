@@ -5,7 +5,20 @@
 - Copy the deployment.yml file you created in last task by running `cp ../1.Task/deployment.yml deployment.yml` from the `2.Task` directory
 - Edit the `service.yml` file, so the `Selector: app name`matches the name in the deployment.
 - Correct `studentx` to the correct student number.
-- Change the nodeport, to match your student number, in the last 2 digits. 
+- Change the nodeport, to match your student number, in the last 2 digits.
+  - student0 = 30010
+  - student1 = 30011
+  - student2 = 30012
+  - student3 = 30013
+  - student4 = 30014
+  - student5 = 30015
+  - student6 = 30016
+  - student7 = 30017
+  - student8 = 30018
+  - student9 = 30019
+  - student10 = 30020
+  - etc
+
 - In this demo enviroment, we are using Nodeport, to expose the deployments. Talk about the different ways you can expose a service :
   - NodePort
   - LoadBalancer

@@ -2,7 +2,7 @@
 
 
 ## Configure git
-- To configure git with your user, type the following commands
+- To configure git with your user, type the following commands with your own name and email.
 
     `git config --global user.name "John Doe"`
     
@@ -62,7 +62,8 @@
 
 ## Create files/changes (GUI)
 
-- Open the folder in vscode
+- Open the folder in vscode.
+- If presented witha  security warning, then click yes, to trusting the folder.
 
 - Open file1.txt and add or change the content
 - Save the file
@@ -74,4 +75,6 @@
 - Select the file
 - See the changes you made to the file, compared with the current version
 
-- Type commit message in the top and apply it
+- Type commit message in the "Message" box in the top and apply it, bly clicking `Command + Enter`
+
+- To prepare for the next step, select `Close Folder` from the Top menubar File menu.
