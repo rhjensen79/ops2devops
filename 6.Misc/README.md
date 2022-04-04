@@ -1,11 +1,11 @@
 # 6. Misc
 
-This last part, is to sum up all we have gone thru, and to provide links etc, for things to look at yourself.
+This last part, is to provide links etc. for things to look at next, to continue the what we went thru.
 
 ## Usefull links
 
 ### CI/CD
-- [Gitlab](https://about.gitlab.com)
+- [Gitlab](https://gitlab.com)
 - [Github](www.github.com)
 - [Tekton](https://tekton.dev)
 - [Jenkins](https://www.jenkins.io)
@@ -19,3 +19,17 @@ This last part, is to sum up all we have gone thru, and to provide links etc, fo
 - [Amazon EKS](https://aws.amazon.com/eks/)
 - [Azure AKS](https://azure.microsoft.com/en-us/services/kubernetes-service/#overview)
 - [Google GKE](https://cloud.google.com/kubernetes-engine/)
+- [MicroK8S](https://microk8s.io)
+- [K3S](https://k3s.io)
+
+### PAAS
+- [Tanzu Application Platform](https://tanzu.vmware.com/application-platform)
+- [Cloudfoundry](https://www.cloudfoundry.org)
+
+### Containers
+- [BuildPacks](https://buildpacks.io)
+
+### Registrys
+- [Harbor](https://goharbor.io)
+- [Docker Hub](https://hub.docker.com)
+- [Artifactory](https://jfrog.com/artifactory/)
