@@ -1,6 +1,6 @@
 # 1. Connect
 
-### The purpose of this task, is to setup a working conection, to the demo enviroment. 
+### The purpose of this task, is to setup a working conection, to the demo enviroment.
 
 ## Get ipadresses
 
