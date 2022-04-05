@@ -1,5 +1,7 @@
 # 1. Connect
 
+### The purpose of this task, is to setup a working conection, to the demo enviroment. 
+
 ## Get ipadresses
 
 - All Student ipadresses are shared from a Notion page, found [here](https://robert-jensen.notion.site/Ops2DevOps-c2706b737bb74fe9943367bc2156e7c4).

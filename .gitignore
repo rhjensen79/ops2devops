@@ -36,3 +36,4 @@ terraform.rc
 **/terraform.tfstate
 0.setup/1.vm/.terraform.lock.hcl
 .DS_Store
+.DS_Store
