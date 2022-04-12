@@ -16,9 +16,7 @@ on:
 
 
 env:
-  # Use docker.io for Docker Hub if empty
-  REGISTRY: ghcr.io
-  # github.repository as <account>/<repo>
+  REGISTRY: registry.tanzu.dk
   IMAGE_NAME: ops2devops/student0
 
 
@@ -49,7 +47,7 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
-          registry: registry.tanzu.dk/ops2devops
+          registry: ${{ env.REGISTRY }}
           username: ${{ secrets.REPO_USER }}
           password: ${{ secrets.REPO_PASS }}
 
@@ -59,7 +57,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: registry.tanzu.dk/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
