@@ -14,12 +14,8 @@ spec:
     spec:
       containers:
       - name: studentx
-        image: ghcr.io/tanzudk/ops2devops/5-k8s-1:master
+        image: registry.tanzu.dk/ops2devops/studentx:master
         imagePullPolicy: Always
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
 ---
 apiVersion: v1
 kind: Service

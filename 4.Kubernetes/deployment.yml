@@ -13,9 +13,4 @@ spec:
     spec:
       containers:
       - name: studentx
-        image: ghcr.io/tanzudk/ops2devops/4-k8s-1:master
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
-
+        image: registry.tanzu.dk/ops2devops/studentx:v1

@@ -1,4 +1,4 @@
-name: 4-k8s-1
+name: ops2devops
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
@@ -12,14 +12,13 @@ on:
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
     paths:
-    - '4.Kubernetes/1.Task/**'
+    - '5.CICD/**'
+
 
 
 env:
-  # Use docker.io for Docker Hub if empty
-  REGISTRY: ghcr.io
-  # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}/4-k8s-1
+  REGISTRY: registry.tanzu.dk
+  IMAGE_NAME: ops2devops/studentx
 
 
 jobs:
@@ -50,8 +49,8 @@ jobs:
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
           registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ secrets.REPO_USER }}
+          password: ${{ secrets.REPO_PASS }}
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
@@ -67,7 +66,7 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
-          context: 4.Kubernetes/1.Task/.
+          context: 4.Kubernetes/.
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
