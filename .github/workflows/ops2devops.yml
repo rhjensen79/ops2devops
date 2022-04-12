@@ -17,7 +17,7 @@ on:
 
 env:
   REGISTRY: registry.tanzu.dk
-  IMAGE_NAME: ops2devops/student0:latest
+  IMAGE_NAME: ops2devops/student0
 
 
 jobs:
