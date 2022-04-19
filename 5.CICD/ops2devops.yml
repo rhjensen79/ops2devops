@@ -12,13 +12,14 @@ on:
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
     paths:
-    - '5.CICD/**'
+    - '5.CICD/Dockerfile'
+    - '5.CICD/html/**'
 
 
 
 env:
   REGISTRY: registry.tanzu.dk
-  IMAGE_NAME: ops2devops/studentx
+  IMAGE_NAME: ops2devops/student0
 
 
 jobs:

@@ -6,7 +6,7 @@ on:
   push:
     branches: [ master ]
     paths:
-    - '5.CICD/**'
+    - '5.CICD/deployment.yml'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -14,7 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  deploy:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -31,5 +31,5 @@ jobs:
           kubeconfig: ${{ secrets.KUBE_CONFIG }} # Use secret (https://developer.github.com/actions/managing-workflows/storing-secrets/)
       - name: Deploy to Cluster
         run: |
-          kubectl delete -f 5.CICD/2.Task/deployment.yml
-          kubectl apply -f 5.CICD/2.Task/deployment.yml
+          #kubectl delete -f 5.CICD/deployment.yml
+          kubectl apply -f 5.CICD/deployment.yml
