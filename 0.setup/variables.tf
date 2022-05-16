@@ -161,7 +161,7 @@ variable "instance_type" {
 variable "k8s_instance_type" {
   description = "Type of the instance"
   type        = string
-  default     = "t2.large"
+  default     = "t2.xlarge"
 }
  
 variable "key_pair" {
