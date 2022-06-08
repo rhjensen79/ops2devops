@@ -7,6 +7,3 @@ A training focused on helping the Ops persona, who is new to DevOps technologies
 ## Pre requirements for the Student, to be completed prior to class
 
 - [Github.com](www.github.com) account
-- [VSCode](https://code.visualstudio.com/Download) Installed
-- [Remote Development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) installed in VSCode
-- SSH Client. For windows, follow this [guide](https://docs.microsoft.com/en-gb/windows-server/administration/openssh/openssh_install_firstuse), if you don't have one.
