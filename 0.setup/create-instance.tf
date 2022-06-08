@@ -26,8 +26,8 @@ sudo systemctl enable docker
 sudo usermod -aG docker ubuntu
 sudo mkdir /home/ubuntu/.kube
 sudo chmod 777 /home/ubuntu/.kube
-wget https://github.com/coder/code-server/releases/download/v4.2.0/code-server_4.2.0_amd64.deb
-sudo dpkg -i code-server_4.2.0_amd64.deb
+wget https://github.com/coder/code-server/releases/download/v4.4.0/code-server_4.4.0_amd64.deb
+sudo dpkg -i code-server_4.4.0_amd64.deb
 sudo systemctl enable --now code-server@ubuntu
 mkdir /home/ubuntu/.config
 mkdir /home/ubuntu/.config/code-server
