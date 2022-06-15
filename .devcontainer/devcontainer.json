@@ -20,5 +20,10 @@
 	"features": {
 		"docker-in-docker": "20.10",
 		"kubectl-helm-minikube": "1.23"
+	},
+	"portsAttributes": {
+		"80": {
+			"label": "http"
+		}
 	}
 }
