@@ -21,6 +21,7 @@ This last part, is to provide links etc. for things to look at next, to continue
 - [Google GKE](https://cloud.google.com/kubernetes-engine/)
 - [MicroK8S](https://microk8s.io)
 - [K3S](https://k3s.io)
+- [Getting Started K8S Overview](https://theithollow.com/2019/01/26/getting-started-with-kubernetes/)
 
 ### PAAS
 - [Tanzu Application Platform](https://tanzu.vmware.com/application-platform)
