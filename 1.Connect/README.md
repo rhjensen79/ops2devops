@@ -1,32 +1,25 @@
 # 1. Connect
 
-### The purpose of this task, is to setup a working conection, to the demo enviroment.
-
-## Get ipadresses
-
-- All Student ipadresses are shared from a Notion page, found [here](https://robert-jensen.notion.site/Ops2DevOps-c2706b737bb74fe9943367bc2156e7c4).
-- Dont copy them, until the teacher has updated with the ipadessed, relavant for the current class. 
+### The purpose of this task, is to fork the repository, and connect to the demo enviroment.
  
 
-## Open in VSCode
+## Open Github
 
-- Start VScode
-- Open "Command Palette" 
+- If you havent already done so, the open [https://github.com/rhjensen79/ops2devops](https://github.com/rhjensen79/ops2devops) and login using your Github account.
 
-    `ctrl+Shift+P on Windows`
+- Click fork in the top right corner.
+- Select your user, and select `Create Fork`
+![fork](../.repo/images/fork_repo.png)
 
-    `cmd+shift+P on Mac`
+- After it's complete, open the new repository. The url is username/ops2devops
+- Click the green `code`button, and select the Codespaces tab and click the small `+`button, next to `Codespaces` 
+![create codespace](../.repo/images/new_codespace.png)
+- You might be asked to open in VScode. Only do this, if you are sure of what you are doing. Our focus in this lab, is running it in the browser.
 
-- Type `Remote SSH: Connect to Host`
+- After a couple of minutes, refresh the browser, select the `code`button, the `codespaces`tab and click the `...`next to the custom name.
+- From the dropdown menu select `Open in browser`
+![open cs](../.repo/images/open_codespace.png)
 
-- Select `Add new SSH Host`
+- You should now have a full working Codepspace enviroment, running in your browser.
+![codespace](../.repo/images/codespace.png)
 
-- Type `ssh ubuntu@Ipadress`
-
-- Open Command palette again, and type `Remote SSH: Connect to Host`
-
-- Select the host you just added
-
-    Accept certificate warning, if you get one. 
-
-Your VSCode is now connected to the remote machie, and everything you do, will be done remote, and not local.
