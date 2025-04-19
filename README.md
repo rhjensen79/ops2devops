@@ -1,3 +1,5 @@
+!!! Archived due to no development is being done on it, since i have switched to [Educates](https://github.com/educates/educates-training-platform) !!! 
+
 ![logo](.repo/images/frontpage_logo.jpg)
 # Ops2DevOps workshop
 
